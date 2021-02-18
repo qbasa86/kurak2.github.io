@@ -2914,15 +2914,18 @@ layout.GetHeight()));isChanged=true}}if(isChanged)wi.SetBboxChanged()}GetPropert
 		C3.Behaviors.bound,
 		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Audio.Cnds.IsAnyPlaying,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Behaviors.Platform.Acts.SetVectorY,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.AddInstanceVar,
+		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
-		C3.Plugins.Sprite.Acts.SetDefaultColor
+		C3.Plugins.System.Acts.NextPrevLayout,
+		C3.Plugins.System.Acts.GoToLayout
 		];
 	};
 	self.C3_JsPropNameTable = [
@@ -2958,6 +2961,12 @@ layout.GetHeight()));isChanged=true}}if(isChanged)wi.SetBboxChanged()}GetPropert
 		{BoundToLayout: 0},
 		{Player: 0},
 		{Audio: 0},
+		{Sprite22: 0},
+		{goTo0: 0},
+		{goTo1: 0},
+		{Sprite23: 0},
+		{Sprite24: 0},
+		{Sprite25: 0},
 		{enemies: 0}
 	];
 }
@@ -3065,9 +3074,7 @@ layout.GetHeight()));isChanged=true}}if(isChanged)wi.SetBboxChanged()}GetPropert
 		() => -400,
 		() => "fly",
 		() => "run",
-		() => 1,
-		() => -1023,
-		() => -619025046438911
+		() => 1
 	];
 }
 
